@@ -1,0 +1,74 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists
+   will truncate terms that are too long to fit in the left column
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*Index view page*/
+#indexBody {
+    float: left;
+    padding-top: 80px;
+}
+
+#indexUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    text-align: center;
+    font-size: 20px;
+    height: 31.1%;
+    overflow: auto;
+}
+
+    #indexUl li a {
+        display: block;
+        color: #CC7000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+        #indexUl li a:hover{
+            background-color: #CC7000;
+            color: black;
+        }
+
+#customTable {
+    width: 100%;
+}
+
+#customTable tr:nth-child(even) {
+    background-color: orange
+}
+
+#customTable tr:nth-child(odd) {
+    background-color: black
+}
+
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}

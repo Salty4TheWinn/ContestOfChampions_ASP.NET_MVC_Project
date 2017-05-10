@@ -1,0 +1,27 @@
+﻿@model List<ContestOfChampions.Models.ViewModels.Alliance.AllianceViewModel>
+    @{
+        ViewBag.Title = "Index";
+    }
+
+    <div class="container" style="padding-top: 50px">
+        <table id="customTable" class="table table-striped" style="border: 1px solid orange">
+            <thead>
+                <tr style="text-align: center">
+                    <th style="text-align: center">Name</th>
+                    <th style="text-align: center">Total Members</th>
+                    <th style="text-align: center">Treasury</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var alliace in Model)
+                {
+                    <tr  style="text-align: center">
+                        <td>@alliace.Name</td>
+                        <td>@alliace.Members.Count</td>
+                        <td><img src="http://www.iconarchive.com/download/i7737/hopstarter/sleek-xp-basic/Money.ico"  style="width: 100px;height: 100px"/></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
